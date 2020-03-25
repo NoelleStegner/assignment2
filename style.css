@@ -1,6 +1,8 @@
 *{
   font-family: Cabin;
 text-align: center;
+background-image: url(https://as1.ftcdn.net/jpg/03/00/66/14/500_F_300661494_AUgjE054g5eqWUvnqhen5CG63CXkKttK.jpg);
+background-size:cover;
 }
 
 }
@@ -27,27 +29,33 @@ text-align: left;
 }
 h2{
 text-align: left;
-  font-size: 1.5em;
+  font-size: 1.25em;
+}
+.menu-button{
+  text-align: right;
+  margin-top: 3em;
 }
 nav{
-    border: none;
-    position:absolute;
-    right:16px;
-    background-color: #fff;
-    width:200px;
+
+    width:20%;
+    float: right;
+
 }
+
 .menu-nav{
-  border: none;
+
+  position: absolute;
+
+
 }
 .main-menu form{
     padding:5px;
 }
-.menu-button{
-  text-align: right;
-}
+
 .main-menu li{
   padding:6px;
   border-bottom: solid 1px #000;
+
 }
 .main-menu ul{
   border: solid 1px #000;
@@ -57,7 +65,7 @@ nav{
 .main-menu a{
   text-decoration: none;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
 
 }
 
@@ -68,6 +76,29 @@ a:link {
 a:hover{
   color: grey;
 }
+.dropdown li{
+    display:block;
+    margin-left: 0;
+    margin-right: 20em;
+    text-align: center;
+
+          }
+.dropdown ul{
+  text-align: center;
+  border: solid 1px #ccc;
+  padding: 2px;
+  background-color: #fff;
+  width: 120px;
+  position: absolute;
+  display: none;
+
+
+}
+.dropdown:hover ul{
+  display: block;
+  text-align: center;
+
+}
 .fluid-image{
 margin-top: .25em;
   margin-bottom: .25em;
@@ -75,22 +106,14 @@ margin-top: .25em;
 
 
 }
-.dropdown li{
-  border: none;
-}
-.menu-nav{
-  position: static;
-  width:auto;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
+
+
 
 /*Desktop styles*/
 @media(min-width: 768px){
 header{
-    width:30%;
+    width:40%;
       }
 
 nav{
@@ -116,12 +139,24 @@ nav{
   border: none;
 
 }
+.menu-nav{
+  position: absolute;
+  width:auto;
+  border: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2em;
+  margin-left: 6em;
+  float: right;
+}
 .search{
   float:right;
+
 }
 
 
 .dropdown li{
+
     display:block;
     margin-left: 0;
           }
@@ -137,5 +172,7 @@ nav{
 }
 .dropdown:hover ul{
   display: block;
+  text-align: center;
 
+}
 }
