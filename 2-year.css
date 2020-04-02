@@ -1,6 +1,7 @@
 *{
   font-family: Cabin;
-
+margin: 0;
+padding: 0;
 box-sizing: border-box;
 }
 
@@ -44,14 +45,17 @@ nav{
 .menu-nav{
 
   position: absolute;
+  display: block;
 
 
 }
+
 .main-menu form{
     padding:5px;
 }
 
 .main-menu li{
+  background-color: white;
   padding:6px;
   border-bottom: solid 1px #000;
 
@@ -76,6 +80,7 @@ a:hover{
   color: grey;
 }
 .dropdown li{
+
     display:block;
     margin-left: 0;
     margin-right: 20em;
@@ -99,18 +104,23 @@ a:hover{
 
 }
 .fluid-image{
-margin-top: .25em;
-  margin-bottom: .25em;
+  margin-bottom: .15em;
   width: 100%;
-
+  height: 90px;
 
 }
 main{
   clear:both;
 }
+
+h3{
+  margin-top: 12px;
+  position: absolute;
+
+}
 .page-footer{
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
 }
 .btn{
   background-color: #f48fb1;
@@ -120,6 +130,9 @@ main{
   text-align: center;
   display: inline-block;
   border-radius: 8px;
+
+
+
 }
 .btn:hover{
   background-color: #ffc1e3;
@@ -127,21 +140,23 @@ main{
 
 }
 .flexbox{
-  position: absolute;
+
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #000;
+
 }
 
 .card{
-
-  width: 200px;
-  height: 300px;
+  flex: 1 0 auto;
+  margin-top: 50px;
+  width: 180px;
+  height: 250px;
   background-color: white;
-  border: solid 1px #ccc;
-  border-radius: 10px;
+  margin-right: 5px;
+  border: solid teal;
+  border-radius: 20px;
 
 }
 .card img{
@@ -152,6 +167,11 @@ main{
 .card-body{
   padding: 16px;
 }
+.card-empty{
+  border: none;
+  display: none;
+}
+
 
 /*Desktop styles*/
 @media(min-width: 768px){
@@ -220,9 +240,4 @@ nav{
 }
 
 
-h3{
-  margin-top: 10em;
-  position: absolute;
-  float: left;
-}
 }
